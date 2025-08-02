@@ -6,7 +6,6 @@
 
     body{
       background-color: hsl(212, 45%, 89%);
-      font-size: 15px;
       height: 100%;
       display: flex;
       align-items: center;
@@ -17,8 +16,6 @@
       display: grid;
       background-color: white;
       border-radius: 10px;
-      width: 250px;
-      height: 450px;
     }
      
     .qrImage {
@@ -35,24 +32,26 @@
       border-radius: 8px;
     }
 
-    .qrTitle {
-      font-weight: 700;
-      color: hsl(218, 44%, 22%);
-    }
-
     .qrText {
       font-family: "Outfit", sans-serif;
       font-weight: 400;
+      font-size: 15px;
       color: hsl(216, 15%, 48%);
       text-align: center;
       width: auto;
       margin: 10px;
     }
 
-    @media (max-width: 375px){
+    .qrTitle {
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+    }
+
+
+    @media (min-width: 375px){
        .card {
-        width: 210px;
-        height: 400px;
+        width: 15em;
+        height: 25rem;
       }
       
       img {
