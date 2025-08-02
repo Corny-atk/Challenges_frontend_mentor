@@ -10,19 +10,93 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    html {
+      height: 100%;
+    }
+
+    body{
+      background-color: hsl(212, 45%, 89%);
+      font-size: 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      display: grid;
+      background-color: white;
+      border-radius: 10px;
+      width: 250px;
+      height: 450px;
+    }
+     
+    .qrImage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    .qrTitle {
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+    }
+
+    .qrText {
+      font-family: "Outfit", sans-serif;
+      font-weight: 400;
+      color: hsl(216, 15%, 48%);
+      text-align: center;
+      width: auto;
+      margin: 10px;
+    }
+
+    @media (min-width: 1440px) {
+       .card {
+        width: 250px;
+        height: 400px;
+      }
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+    @media (max-width: 375px){
+       .card {
+        width: 210px;
+        height: 400px;
+      }
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <div class="qrImage">
+      <img src="./images/image-qr-code.png" alt="QR code">
+    </div>
+    <div class="qrText">
+      <p class="qrTitle">Improve your front-end skills by building projects</p>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
   </div>
 </body>
 </html>
